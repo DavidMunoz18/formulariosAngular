@@ -1,0 +1,30 @@
+<h1 style="text-align: center;">Ejemplo de Formularios Reactivos</h1>
+
+<!-- <label for="name">Name: </label>
+<input id="name" type="text" [formControl]="name">
+
+<label for="apellido">Apellido:</label>
+<input id="apellido" type="text" [(ngModel)]="apellido">
+
+<div>
+
+  <p>Nombre: {{name.value}}</p>
+  <p>Apellidos: {{apellido}}</p>
+
+  <button type="button" (click)="updateName()">Update Name</button>
+</div> -->
+
+<!-- <app-perfil-usuario></app-perfil-usuario>
+ <app-perfil2fb></app-perfil2fb>-->
+
+ <mat-toolbar color="primary">
+  <span>E-Commerce</span>
+  <span class="espaciador"></span>
+  <nav>
+    <button mat-button routerLink="/formulario1" routerLinkActive="active">Formulario 1</button>
+    <button mat-button routerLink="/formulario2" routerLinkActive="active">Formulario 2</button>
+    <button mat-button routerLink="/formulario3" routerLinkActive="active">Formulario 3</button>
+  </nav>
+</mat-toolbar>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,14 @@
+  nav button {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  nav button.active {
+    background-color: #ff6600; 
+    color: white;
+  }
+  
+  .espaciador {
+    flex: 1 1 auto;
+  }
+  

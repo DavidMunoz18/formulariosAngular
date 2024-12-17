@@ -1,0 +1,37 @@
+<form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput id="nombre" type="text" formControlName="nombre">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Apellidos</mat-label>
+    <input matInput id="apellidos" type="text" formControlName="apellidos">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Edad</mat-label>
+    <input matInput id="edad" type="text" formControlName="edad">
+  </mat-form-field>
+  <div formGroupName="direccion">
+    <h2>Dirección</h2>
+    <mat-form-field appearance="outline">
+      <mat-label>Calle</mat-label>
+      <input matInput id="calle" type="text" formControlName="calle">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Localidad</mat-label>
+      <input matInput id="localidad" type="text" formControlName="localidad">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Provincia</mat-label>
+      <input matInput id="provincia" type="text" formControlName="provincia">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Código Postal</mat-label>
+      <input matInput id="codPostal" type="text" formControlName="codPostal">
+    </mat-form-field>
+  </div>
+  <div class="acciones">
+    <button mat-raised-button color="primary" type="submit">Enviar</button>
+    <button mat-button type="button" (click)="actualiza()">Actualizar</button>
+  </div>
+</form>
